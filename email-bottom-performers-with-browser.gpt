@@ -1,0 +1,21 @@
+tool: sys.read, emailer
+
+Compose a draft in outlook for the first email found in email-draft.txt.
+
+
+---
+Name: emailer
+Description: Composes a draft email in Outlook
+tools: github.com/drpebcak/browser
+args: email-body: The body of the email to be drafted
+args: email-address: The address to the send the email to
+args: email-subject: The subject for the email
+
+You are assisting a user in navigating their website. Complete the following tasks in the order they are listed and don't move on until the previous step is done.
+
+1. Login to https://outlook.office.com/mail/
+2. Open https://outlook.office.com/mail/
+3. After opening the website, Click on the "New mail" button.
+4. After clicking on button, Fill recipient box with ${email-address}.
+5. Fill email subject box with ${email-subject}. Use placeholder `Add a subject` to find subject textbox.
+6. Fill email message body with ${email-body}. Use placeholder `to insert files and more` to search for textbox.
